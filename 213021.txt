@@ -1,0 +1,53 @@
+git init - со оваа команда иницијализираме git во локалното repo
+
+git remote add origin https://github.com/milaml/SI_2023_lab1_213021.git - ги поврзуваме локалното repo со remote repo
+
+git add REAMDE.md - додаваме README file на сцената (staging area) 
+
+git commit -m "Initial commit" - со оваа команда правиме snapshot од тој фајл 
+
+git add SILab1.java
+
+git commit -m "Add java class"
+
+git push -u origin master - синхронизација на локалното repo со remote репозиториумот
+ git branch bug1, git branch bug2, git branch bug3 - креирање на нови гранки
+
+git checkout bug1- промена на друга гранка од гранката master
+
+ја поправаме грешката со сите bug и потоа правиме дадените commits
+
+git push -u origin bug1 - ги синхронизираме локалното repo со remote репозиториумот, исто и за bug2 и bug3
+
+git checkout master - промена од една гранка во гранката master
+
+git merge bug1 - спојување на гранката master со гранката bug1
+
+спојувањето е направено според Fast-Forward стратегијата
+
+немало конфликти
+git merge bug2 - спојување на гранката master со гранката bug2
+
+за спојувањето на bug2, спојувањето е со 
+
+рекурзивна стратегија и во овој чекор немало конфликти
+
+git rebase master - со оваа команда правиме преместување на претходните
+
+commits во temp зона каде се извршуваат првен претходните commits 
+
+па после најпоследните од bug3
+
+git merge bug3 - спојување на гранката master со гранката bug3
+
+за спојувањето на bug3 немало конфликти а за спојување
+
+е искористена Fast-Forward стратегија
+
+git push --force -u origin bug3 - синхронизација на remote repo со локалното
+
+git log - Проверка на претходни commits
+
+git status - проверуваме колку files се untracked или tracked 
+
+и дали се додадени на сцената 
